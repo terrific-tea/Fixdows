@@ -1,0 +1,55 @@
+﻿<Window x:Class="Fixdows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fixdows"
+        mc:Ignorable="d"
+        Title="Fixdows" Height="450" Width="800" ResizeMode="CanMinimize">
+    <TabControl x:Name="MainTabs" HorizontalAlignment="Left" Height="418" VerticalAlignment="Top" Width="790">
+        <TabItem Header="Home">
+            <Grid>
+                <Label Content="Hello" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="49" Width="154" FontSize="18" FontFamily="Tahoma"/>
+                <Label Content="To repair something, you should find the tab that corresponds to your issue.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.836,-0.254" Width="482" Height="33" FontSize="14">
+                </Label>
+                <Image HorizontalAlignment="Left" Height="42" Margin="500,69,0,0" VerticalAlignment="Top" Width="261" Source="tab-shot.png" Stretch="Fill"/>
+                <Label Content="Click on a tab to navigate around the software." HorizontalAlignment="Left" Margin="474,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.209,-0.061" Height="35" Width="300" FontSize="14"/>
+                <Label Content="" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Height="28" Width="290" RenderTransformOrigin="0.424,1.72"/>
+
+            </Grid>
+        </TabItem>
+        <TabItem Header="Windows Update Fixes">
+            <Grid>
+                <Label Content="Windows Update Fixes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="232" FontFamily="Verdana" FontSize="18"/>
+                <Label Content="If you're having issues with Windows Update you can try this.&#xD;&#xA;This resets all Windows Update components, and restarts services. &#xD;&#xA;It also removes Windows Update group policies!&#xD;&#xA;&#xD;&#xA;Thanks to Shawn Brink on tenforums.com for this script.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="114" Width="447" FontSize="14"/>
+                <Button x:Name="WupdButton" Content="Reset Windows Update!" HorizontalAlignment="Left" Margin="243,197,0,0" VerticalAlignment="Top" Width="299" Height="106" FontSize="24" Click="WupdButton_Click"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Integrity Checks &amp; Fixes">
+            <Grid>
+                <Label Content="Integrity Checks &amp; Fixes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="232" FontFamily="Verdana" FontSize="18"/>
+                <Label Content="This is a tool to check if your Windows system has all the files it needs.&#xD;&#xA;It fixes corrupt/missing files and can probably boost system performance.&#xD;&#xA;It's always great to check every month or two if you suspect something is broken." HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="142" Width="532" FontSize="14"/>
+                <Button x:Name="IntegrityFixButton" Content="Fix this!" HorizontalAlignment="Left" Margin="243,197,0,0" VerticalAlignment="Top" Width="299" Height="106" FontSize="24" Click="IntegrityFixButton_click"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Disk Cleanup">
+            <Grid>
+                <Label Content="Disk Cleanup" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="162" FontFamily="Verdana" FontSize="18"/>
+                <Label Content="I'd make a tool to clean up your disk(s), but Windows already has a tool built in to clean up your disk(s), and it does&#xA;most of what I'd think to do.&#xA;&#xA;Therefore, when you click &quot;Start cleaning your disk(s)&quot; the tool is not developed by me, so I can't fix any bugs.&#xA;Enough rambling," HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Height="132" Width="784" FontSize="14"/>
+                <Button x:Name="CleanDiskButton" Content="Click here to start cleaning your disk(s)" HorizontalAlignment="Left" Margin="209,213,0,0" VerticalAlignment="Top" Width="358" Height="91" FontSize="20" Click="CleanDiskButton_Click"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="About Fixdows">
+            <Grid>
+                <Label Content="Fixdows" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="33" Width="86" FontSize="18" FontFamily="Verdana"/>
+                <Label Content="Fixdows is a tool made in C# to repair common issues among Windows computers.&#xD;&#xA;Licensed with GPL3." HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Height="46" Width="527" FontSize="14"/>
+                <Label Content="You are running version 1.0.&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,176,0,0" VerticalAlignment="Top" Height="32" Width="205" FontSize="14"/>
+                <Label Content="Made by Oxygemo for Terrific Tea Studios.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Height="32" Width="279" FontSize="14"/>
+                <Button x:Name="AboutRedirButtonGithub" Content="Fixdows Github" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" Width="101" Height="26" Click="AboutRedirButtonGithub_Click"/>
+                <Image HorizontalAlignment="Left" Height="100" Margin="588,48,0,0" VerticalAlignment="Top" Width="100" Source="tts-logo-new-cup-icon.png"/>
+                <Button x:Name="AboutRedirButtonDiscord" Content="Discord (support)" HorizontalAlignment="Left" Margin="128,131,0,0" VerticalAlignment="Top" Width="101" Height="26" Click="AboutRedirButtonDiscord_Click"/>
+                <Button x:Name="AboutRedirButtonMyEmail" Content="Oxygemo's E-mail" HorizontalAlignment="Left" Margin="248,131,0,0" VerticalAlignment="Top" Width="101" Height="26" Click="AboutRedirButtonMyEmail_Click"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>
