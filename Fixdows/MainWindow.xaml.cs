@@ -53,42 +53,34 @@ namespace Fixdows
 
         private void IntegrityFixButton_click(object sender, RoutedEventArgs e)
         {
-            var dir1 = Directory.GetCurrentDirectory(); // Get current directory before actual code, and assign it to a variable ( I can probably optimize this )
-            if (dir1.Contains("Debug")) // Does the current Directory have "debug" in it? if so, do this.
+            var dir = Directory.GetCurrentDirectory(); // Get current directory before actual code, and assign it to a variable ( I can probably optimize this )
+            if (dir.Contains("Debug")) // Does the current Directory have "debug" in it? if so, do this.
             {
                 Directory.SetCurrentDirectory("../");
                 Directory.SetCurrentDirectory("../");
-                goto RunScript; // once this is done let's go to the rest of the code
-            }
-            else // Ok, we didn't have "Debug" in the current directory. Let's do this!
-            {
-                goto RunScript; // If we didn't see "Debug" in the directory then continue with the code. I tried to use return; but that doesn't work (js...). Why do we check if we have debug? Because it won't work if you're running it from VS.
             }
 
-            RunScript:
-                var dir = Directory.GetCurrentDirectory(); // assign current directory to variable
-                Console.WriteLine(dir); // For debugging
-                Process.Start(dir + "/assets/integrity.bat"); // Now we run the integrity check script
+            dir = Directory.GetCurrentDirectory(); // assign current directory to variable
+            Console.WriteLine(dir); // For debugging
+            var integrity = new ProcessStartInfo($"{dir}/assets/integrity.bat");
+            integrity.Verb = "runas";
+            Process.Start(integrity); // Now we run the integrity check script
         }
 
         private void WupdButton_Click(object sender, RoutedEventArgs e)
         {
-            var dir1 = Directory.GetCurrentDirectory(); // Get current directory before actual code, and assign it to a variable ( I can probably optimize this )
-            if (dir1.Contains("Debug")) // Does the current Directory have "debug" in it? if so, do this.
+            var dir = Directory.GetCurrentDirectory(); // Get current directory before actual code, and assign it to a variable ( I can probably optimize this )
+            if (dir.Contains("Debug")) // Does the current Directory have "debug" in it? if so, do this.
             {
                 Directory.SetCurrentDirectory("../");
                 Directory.SetCurrentDirectory("../");
-                goto RunScript; // once this is done let's go to the rest of the code
-            }
-            else // Ok, we didn't have "Debug" in the current directory. Let's do this!
-            {
-                goto RunScript; // If we didn't see "Debug" in the directory then continue with the code. I tried to use return; but that doesn't work (js...). Why do we check if we have debug? Because it won't work if you're running it from VS.
             }
 
-        RunScript:
-            var dir = Directory.GetCurrentDirectory(); // assign current directory to variable
+            dir = Directory.GetCurrentDirectory(); // assign current directory to variable
             Console.WriteLine(dir); // For debugging
-            Process.Start(dir + "/assets/wu.bat"); // Now we run the integrity check script
+            var wu = new ProcessStartInfo($"{dir}/assets/wu.bat");
+            wu.Verb = "runas";
+            Process.Start(wu); // Now we run the integrity check script
         }
     }
 }
