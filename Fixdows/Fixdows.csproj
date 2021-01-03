@@ -161,4 +161,15 @@
     <Resource Include="tts-logo-new-cup-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>echo Building Fixdows, shouldn't take long...</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>dir
+cd ../
+cd ../
+copy assets bin/Debug
+cd bin
+cd Debug</PostBuildEvent>
+  </PropertyGroup>
 </Project>
