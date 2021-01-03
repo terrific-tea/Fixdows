@@ -13,8 +13,7 @@
                 <Label Content="To repair something, you should find the tab that corresponds to your issue.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.836,-0.254" Width="482" Height="33" FontSize="14">
                 </Label>
                 <Image HorizontalAlignment="Left" Height="73" Margin="62,170,0,0" VerticalAlignment="Top" Width="652" Source="tab-shot.png" Stretch="Fill"/>
-                <Label Content="Click on a tab to navigate around the software." HorizontalAlignment="Left" Margin="235,130,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.209,-0.061" Height="35" Width="300" FontSize="14"/>
-                <Label Content="" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Height="28" Width="290" RenderTransformOrigin="0.424,1.72"/>
+                <Label Content="Click on a tab (above) to navigate around the software." HorizontalAlignment="Left" Margin="212,130,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.209,-0.061" Height="35" Width="349" FontSize="14"/>
 
             </Grid>
         </TabItem>

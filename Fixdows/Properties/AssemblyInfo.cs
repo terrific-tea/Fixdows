@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Terrific Tea Studios")]
 [assembly: AssemblyProduct("Fixdows")]
-[assembly: AssemblyCopyright("Copyright © Terrific Tea Studios 2020")]
+[assembly: AssemblyCopyright("Copyright © Terrific Tea Studios 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
