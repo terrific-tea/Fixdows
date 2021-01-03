@@ -61,7 +61,6 @@ namespace Fixdows
             }
 
             dir = Directory.GetCurrentDirectory(); // assign current directory to variable
-            Console.WriteLine(dir); // For debugging
             var integrity = new ProcessStartInfo($"{dir}/assets/integrity.bat");
             integrity.Verb = "runas";
             Process.Start(integrity); // Now we run the integrity check script
@@ -77,7 +76,6 @@ namespace Fixdows
             }
 
             dir = Directory.GetCurrentDirectory(); // assign current directory to variable
-            Console.WriteLine(dir); // For debugging
             var wu = new ProcessStartInfo($"{dir}/assets/wu.bat");
             wu.Verb = "runas";
             Process.Start(wu); // Now we run the integrity check script
