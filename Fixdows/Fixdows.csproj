@@ -166,11 +166,21 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>dir
+    <PostBuildEvent>cd ../
 cd ../
-cd ../
-copy assets bin/Debug
+copy assets bin
 cd bin
-cd Debug</PostBuildEvent>
+copy integrity.bat Debug
+copy wu.bat Debug
+cd Debug
+mkdir assets
+copy integrity.bat assets
+copy wu.bat assets
+cd ../
+del integrity.bat
+del wu.bat
+cd Debug
+del integrity.bat
+del wu.bat</PostBuildEvent>
   </PropertyGroup>
 </Project>
