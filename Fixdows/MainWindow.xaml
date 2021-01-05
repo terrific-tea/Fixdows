@@ -38,6 +38,20 @@
                 <Button x:Name="CleanDiskButton" Content="Click here to start cleaning your disk(s)" HorizontalAlignment="Left" Margin="209,213,0,0" VerticalAlignment="Top" Width="358" Height="91" FontSize="20" Click="CleanDiskButton_Click"/>
             </Grid>
         </TabItem>
+        <TabItem Header="Resources">
+            <Grid>
+                <Label Content="Resources" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="232" FontFamily="Verdana" FontSize="18"/>
+                <Label Content="Links to cool apps that everyone should have. (None of these are affiliated with &#xD;&#xA;the Fixdows dev team, we just think they're great.)" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="50" Width="532" FontSize="14"/>
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,105,0,267" Height="18" Width="55" FontSize="14">
+                    <Hyperlink x:Name="EverythingLabel" Click="EverythingLabel_Click" FontSize="12">Everything</Hyperlink>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,105,0,267" Height="18" Width="237" Text="- Locate files and folders by name instantly."/>
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,128,0,244" Height="18" Width="60" FontSize="14" RenderTransformOrigin="0.424,3.765">
+                    <Hyperlink x:Name="WDSLabel" Click="WDSLabel_Click" FontSize="12">WinDirStat</Hyperlink>
+                </TextBlock>
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,128,0,244" Height="18" Width="249" Text="- Look at what uses most space on your disk(s)."/>
+            </Grid>
+        </TabItem>
         <TabItem Header="About Fixdows">
             <Grid>
                 <Label Content="Fixdows" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="33" Width="86" FontSize="18" FontFamily="Verdana"/>

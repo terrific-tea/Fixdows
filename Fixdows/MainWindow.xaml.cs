@@ -51,6 +51,16 @@ namespace Fixdows
             Process.Start("cleanmgr");
         }
 
+        private void EverythingLabel_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://voidtools.com");
+        }
+
+        private void WDSLabel_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://windirstat.net");
+        }
+
         private void IntegrityFixButton_click(object sender, RoutedEventArgs e)
         {
             var dir = Directory.GetCurrentDirectory(); // Get current directory before actual code, and assign it to a variable ( I can probably optimize this )
