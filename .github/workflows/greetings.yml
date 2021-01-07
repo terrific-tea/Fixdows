@@ -1,6 +1,10 @@
 name: Greetings
 
-on: [pull_request, issues]
+on: 
+  pull_request:
+    types: opened
+  issues:
+    types: opened
 
 jobs:
   greeting:
@@ -10,4 +14,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Welcome! If this is a security issue, please send details to alej0hio2007@gmail.com, help.ttsbotsnapps@gmail.com or message us on Discord.'
-        pr-message: ''
+        pr-message: 'Thanks for your first contribution! Make sure you''ve [checked the docs], and wait for a review!'
