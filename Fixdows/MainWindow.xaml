@@ -56,7 +56,7 @@
             <Grid>
                 <Label Content="Fixdows" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="33" Width="86" FontSize="18" FontFamily="Verdana"/>
                 <Label Content="Fixdows is a tool made in C# to repair common issues among Windows computers.&#xD;&#xA;Licensed with GPL3." HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Height="46" Width="527" FontSize="14"/>
-                <Label Content="You are running version 1.0.&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,176,0,0" VerticalAlignment="Top" Height="32" Width="205" FontSize="14"/>
+                <Label Content="You are running version 1.0.5.&#xA;" HorizontalAlignment="Left" Margin="0,176,0,0" VerticalAlignment="Top" Height="32" Width="205" FontSize="14"/>
                 <Label Content="Made by Oxygemo for Terrific Tea Studios.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Height="32" Width="279" FontSize="14"/>
                 <Button x:Name="AboutRedirButtonGithub" Content="Fixdows Github" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" Width="101" Height="26" Click="AboutRedirButtonGithub_Click"/>
                 <Image HorizontalAlignment="Left" Height="100" Margin="588,48,0,0" VerticalAlignment="Top" Width="100" Source="tts-logo-new-cup-icon.png"/>
